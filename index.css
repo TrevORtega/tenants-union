@@ -1,0 +1,42 @@
+nav {
+    background-color: red;
+    border: 1px black solid;
+    height: 10vh;
+}
+
+.main-header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#map { height: 180px; }
+
+.card-container {
+    background-color: white;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.union {
+    background-color: black;
+    border: 2px red solid;
+    color: white;
+
+    height: 30vh;
+    width: 30vh;
+    margin-bottom: 5vh;
+    justify-self: center;
+    align-self: center;
+}
+
+.union:hover, .union:focus {
+    width: 50vh;
+    height: 50vh;
+}
