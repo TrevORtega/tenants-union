@@ -1,17 +1,34 @@
-nav {
-    background-color: red;
-    border: 1px black solid;
-    height: 10vh;
-}
-
 .main-header {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#map { height: 180px; }
+#map-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 
-.card-container {
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+#atun-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+#atun {
+    display: block;
+    width: 70vw;
+    aspect-ratio: 1500 / 150;
+}
+
+#card-container {
     background-color: white;
     /*display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -28,15 +45,11 @@ nav {
     background-color: black;
     border: 2px red solid;
     color: white;
+    text-align: center;
 
     height: 30vh;
     width: 30vh;
     margin-bottom: 5vh;
     justify-self: center;
     align-self: center;
-}
-
-.union:hover, .union:focus {
-    width: 50vh;
-    height: 50vh;
 }
